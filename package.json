@@ -1,7 +1,7 @@
 {
   "name": "super-sass-loader",
   "description": "super sass loader for Webpack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "scripts": {
     "lint": "standard --fix && npm-ensure -t deps",
@@ -11,7 +11,7 @@
     "test-cov": "nyc npm run test-local",
     "test-report": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "ci": "npm run lint && npm run test-cov && npm run test-report",
-    "release": "npm test && npm-ensure -t changelog && git release $npm_package_version && npm publish",
+    "release": "npm test && git release $npm_package_version && npm publish",
     "precommit": "standard && npm-ensure -t deps"
   },
   "ensure": {
